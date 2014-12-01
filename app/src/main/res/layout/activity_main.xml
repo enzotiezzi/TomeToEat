@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AABBFC"
+    tools:context="${packageName}.${activityClass}">
+
+    <TimePicker
+        android:id="@+id/tpTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="Time To EAT"
+        android:textColor="#00AA00"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tpTime"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="66dp"
+        android:text="Selecione o Horário que a Maiara necessita comer"
+        android:textColor="#FF0000"
+        android:textColorHint="#FF0000" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tpTime"
+        android:layout_centerHorizontal="true"
+        android:background="#AABBCF"
+        android:onClick="getTime"
+        android:text="Registrar" />
+
+</RelativeLayout>
